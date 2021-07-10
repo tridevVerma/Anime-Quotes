@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    background-color: black;
+}
+
+.bg-img::after{
+    position: absolute;
+    top:0%;
+    left:0%;
+    content:'';
+    background: linear-gradient( rgb(162, 232, 255), rgb(44, 177, 255));
+    width:100%;
+    height: 95vh;
+    opacity: 0.7;
+}
+
+.bg-img{
+    position: absolute;
+    top:5vh;
+    left: 0px;
+    z-index: -1;
+    width:100%;
+    background-image: url("./bg3.jpg"); /* The image used */
+    background-color: #ace7ff; /* Used if the image is unavailable */
+    height: 95vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+
+#welcome{
+    color:white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+h1{
+    font-size: 7rem;
+}
+#bigBox{
+    margin:10vh auto;
+    opacity: 0.7;
+}
+
+.accordion-button{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+
+.accordion-button:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: rgb(44, 177, 255);
+    color: white;
+
+}
+
+.box-item:hover{
+    border: 2px solid rgb(44, 177, 255);
+}
+
+.accordion-body{
+    text-align: center;
+    color:rgb(44, 177, 255);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.btn-outline-success{
+    background-color: rgb(44, 177, 255);
+    color:white;
+    padding: 5px;
+    margin-left: 10px;
+    overflow: visible;
+    border: none;
+}
+
+.btn:hover{
+    background-color: rgb(0, 162, 255);
+}
+
+.nav-link:hover{
+    color:white !important;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 1325px) {
+    h1{
+      font-size: 5.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 1040px) {
+    h1{
+      font-size: 4.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 870px) {
+    h1{
+      font-size: 3.5rem;
+    }
+  }
